@@ -7,11 +7,17 @@ import NavbarHeaderDropdownButton from "./navbar-header-dropdown-button";
 
 export default function NavbarHeader() {
   return (
-    <div className="relative bg-uf-black w-full h-[80px] flex justify-center py-2.5 sm:grid sm:grid-cols-12 sm:py-0 sm:border-b-2 border-uf-dark-gray">
+    <div
+      id="navbar-header"
+      className="relative bg-uf-black w-full h-[80px] flex justify-center py-2.5 sm:grid sm:grid-cols-12 sm:py-0 sm:border-b-2 border-uf-dark-gray"
+    >
       <NavbarHeaderDropdownButton />
       <NavbarHeaderLogo />
       <NavbarHeaderSearch />
-      <div className="hidden sm:col-span-4 sm:flex sm:justify-end sm:items-center sm:mr-12">
+      <div
+        id="navbar-header-link"
+        className="hidden sm:col-span-4 sm:flex sm:justify-end sm:items-center sm:mr-12"
+      >
         <NavbarHeaderLink
           NavbarHeaderIcon={AiOutlineUser}
           linkText={"Account"}
@@ -21,7 +27,7 @@ export default function NavbarHeader() {
           NavbarHeaderIcon={AiOutlineShoppingCart}
           linkText={"My Cart"}
           productsInCart={1}
-          customClass="pl-1"
+          customClass="pl-[3px]"
         />
       </div>
     </div>

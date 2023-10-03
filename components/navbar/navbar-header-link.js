@@ -5,7 +5,7 @@ export default function NavbarHeaderLink({
   customClass,
 }) {
   return (
-    <a href="#" className="inline-block relative ml-6 mb-3">
+    <a href="#" className="inline-block relative sm:ml-6 sm:mb-3">
       <i className="text-[42px]">
         <NavbarHeaderIcon></NavbarHeaderIcon>
       </i>

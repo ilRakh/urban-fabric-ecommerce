@@ -16,7 +16,12 @@ module.exports = {
       "uf-orange": "#FF4C00",
       "uf-red": "#E51010",
     },
-    extend: {},
+
+    extend: {
+      screens: {
+        xsm: "310px",
+      },
+    },
   },
   plugins: [],
 };
