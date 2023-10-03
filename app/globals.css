@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-uf-background text-uf-white
+  @apply bg-uf-background text-uf-white overflow-y-hidden
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -11,4 +11,41 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
+}
+
+@media (max-width: 640px){
+    nav.open {
+      @apply h-screen
+    }
+  
+    nav.open #navbar-header {
+      @apply block h-auto
+    }
+
+    nav.open #navbar-header-logo{
+      @apply flex justify-center
+    }
+  
+    nav.open #navbar-header-search {
+      @apply flex w-full justify-center mt-5
+    }
+
+    nav.open #navbar-header-search input{
+      @apply w-[270px] h-[40px] xsm:w-[300px]
+    }
+    nav.open #navbar-header-search label i{
+      @apply text-[32px]
+    }
+
+    nav.open #navbar-header-link {
+      @apply flex justify-center mt-5 space-x-20
+    }
+
+    nav.open #navbar-categories{
+      @apply block w-auto mt-5
+    }
+
+    nav.open #navbar-categories a{
+      @apply block px-5 py-3 text-left before:top-[18px] before:right-5 before:focus:top-5
+    }
 }

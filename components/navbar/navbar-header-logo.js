@@ -1,9 +1,9 @@
 export default function NavbarHeaderLogo() {
   return (
-    <div className="sm:relative sm:col-span-4">
+    <div id="navbar-header-logo" className="sm:relative sm:col-span-4">
       <div className="sm:absolute sm:top-2.5 sm:left-7 lg:left-11">
         <svg
-          className="h-[60px] sm:w-[120px] md:w-[150px] lg:w-[180px] xl:w-[200px]"
+          className="h-[60px] w-[100px] xsm:w-[120px] md:w-[150px] lg:w-[180px] xl:w-[200px]"
           viewBox="0 0 200 60"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
