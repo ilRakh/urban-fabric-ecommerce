@@ -2,18 +2,18 @@
 import { useEffect, useRef, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
-import Card from "./card";
+import Card from "../card/card";
 
-export default function SliceCards({ product, title }) {
+export default function CarouselCardsXL({ product, title }) {
   const [spaceCard, setSpaceCard] = useState(0);
   const myRefs = product.map(() => useRef());
   const sliceShow = useRef(null);
 
   useEffect(() => {
-    const rect1 = myRefs[0].current.getBoundingClientRect();
-    const rect2 = myRefs[1].current.getBoundingClientRect();
-
-    setSpaceCard(rect2.left - rect1.left - 280);
+    const element1 = myRefs[0].current.getBoundingClientRect(); // Obtengo la posición y el tamaño del primer elemento
+    const element2 = myRefs[1].current.getBoundingClientRect(); // Obtengo la posición y el tamaño del segundo elemento
+    
+    setSpaceCard(element2.left - element1.left - 280);
   }, []);
 
   const handleNext = () => {

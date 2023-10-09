@@ -1,13 +1,15 @@
-import SliceCards from "./component/slice-cards";
 import "./globals.css"
-import { buzos } from "./Productos";
+import { zapas } from "./Productos";
+import SliceImage from "@/components/carousel-image/slice-image";
 import Navbar from "@/components/navbar/navbar";
+import CarouselCardsSize from "@/components/carousel-cards/carousel-cards-size";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <SliceCards product={buzos} title="HIGHLIGHTS" />
+      {/* <SliceImage/> */}
+      <CarouselCardsSize product={zapas} title="HIGHLIGHTS"/>
     </>
   );
 }
