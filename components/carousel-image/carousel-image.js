@@ -25,25 +25,19 @@ export default function CarouselImages() {
     ];
     const [content, setContent] = useState(arrayFlyers[0]);
     const Next = () => {
-        if (content.id === 0) {
-            setContent(arrayFlyers[1]);
+        if (content.id === arrayFlyers.length - 1) {
+            setContent(arrayFlyers[0])
         }
-        if (content.id === 1) {
-            setContent(arrayFlyers[2]);
-        }
-        if (content.id === 2) {
-            setContent(arrayFlyers[0]);
+        else {
+            setContent(arrayFlyers[content.id + 1])
         }
     };
     const Back = () => {
         if (content.id === 0) {
-            setContent(arrayFlyers[2]);
+            setContent(arrayFlyers[arrayFlyers.length - 1])
         }
-        if (content.id === 1) {
-            setContent(arrayFlyers[0]);
-        }
-        if (content.id === 2) {
-            setContent(arrayFlyers[1]);
+        else {
+            setContent(arrayFlyers[content.id - 1])
         }
     };
     useEffect(() => {
