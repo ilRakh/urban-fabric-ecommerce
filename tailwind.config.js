@@ -15,6 +15,8 @@ module.exports = {
       "uf-dark-gray": "#3A3A3A",
       "uf-orange": "#FF4C00",
       "uf-red": "#E51010",
+      "uf-opacity-black": "#00000080",
+      "uf-opacity-white": "#ffffff80",
     },
     extend: {},
   },
