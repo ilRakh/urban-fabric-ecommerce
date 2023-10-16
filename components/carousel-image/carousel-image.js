@@ -57,8 +57,8 @@ export default function CarouselImages() {
 
     return (
         <Link href={content.link ? content.link : "#"}>
-            <div className="relative flex flex-col justify-center items-center w-full h-[500px]">
-                <Image width={1300} height={450} alt="Image" src={content.image} className="w-full h-full object-cover" />
+            <div className="relative flex flex-col justify-center items-center w-full h-[37vw]">
+                <Image width={1300} height={500} alt="Image" src={content.image} className="w-full h-full object-cover" />
                 <button onClick={Back} className="h-full w-[50px]  flex flex-row justify-center items-center text-uf-white text-4xl bg-transparent outline-none cursor-pointer absolute left-0">
                     <IoIosArrowBack />
                 </button>
